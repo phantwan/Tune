@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Hongni Ye">
+
+    <title>Tune</title>
+
+    <!-- Css -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <div class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-menu">
+                <span class="bar1"></span>
+                <span class="bar2"></span>
+                <span class="bar3"></span>
+            </div>
+            <a class="navbar-brand top" href="./index.html">
+                <img src="img/logo.png" alt="">
+            </a>
+
+        </div>
+
+        <div class="collapse navbar-collapse" id="main-menu">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#about">MVP</a></li>
+                <li><a href="#portfolio">Poster</a></li>
+                <li><a href="#press">Demo</a></li>
+                <li><a href="#brand">Their Stories</a></li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+
+<!-- Intro -->
+
+
+<!-- About -->
+<section class="about" id="about">
+    <div class="container about">
+        <div>
+            Minimum Viable Product
+            Technical Specification
+        </div>
+    </div>
+    <div class="sub-title"><b>Interaction Flowcart</b></div>
+    <div><img src="img/doc1.png"></div>
+
+</section>
+<div class="sub-title"><b>Scenario-based Product<br>Interaction Network</b></div>
+<div class="row">
+    <div class="col-md-6">
+
+        <p>
+            The elderly uses Tune to listen to the music and share with his daughter
+        </p>
+
+
+    </div>
+</div>
+
+
+<div><img src="img/doc2.png"> </div>
+<div><h2>Product Design Specification</h2></div>
+<div><p>Final product</p></div>
+<div>
+    <p>
+        NFC Cards with RFID Module
+    </p>
+</div>
+<div>
+    <p>
+        When the user presses the "save" button, the music will be
+        saved to an NFC card in an instant by the RFID module in the
+        device, which can also read the card to playback the music
+        without delay. The data stored in the card takes the format of
+        the song ID, matching the music file from the database.
+
+        Plus, the NFC card is compatible with almost all the
+        mainstream mobile phones, making it possible for the
+        younger generations to play the in-card music with their
+        phones, a way to facilitate communication among the
+        generations.
+
+        The music in a card is not able to be rewritten due to the
+        consideration of the elderly being more prone to mistake, also
+        because the song relates to a special memory of them, which
+        they do not wish to change or wipe away.
+    </p>
+</div>
+<div><h2>Physical prototype</h2></div>
+<div><img src="img/explosive%20view%201.png"></div>
+<div>
+    <p>
+        In the physical prototype, we focus more on the
+        user experience, so decide to replace the ESP-32
+        board which provides internet connection to an
+        Arduino UNO + MP3 module to create the music
+        experience.
+    </p>
+</div>
+<div><img src="img/IMG_6987%201.png"></div>
+<div><img src="img/Frame7.jpg"></div>
+<div><h1>Bill of Materials and Services</h1></div>
+<table class="table table-hover">
+    <tbody>
+    <tr>
+        <th >Bill of Materials and Services(BOM)</th>
+    </tr>
+    <th >FIXED COSTS</th>
+    <tr>
+        <td>#</td><td>Article</td><td>Description</td><td>Unit Cost</td><td>Quantity</td><td>Units</td><td>Subtotal</td><td>Link</td>
+    </tr>
+    <tr>
+        <td>1</td><td>RFID module</td><td>"read and write data for the card RC522 Module"</td>
+        <td>¥15.00</td><td>1</td><td>number</td><td>¥15.00</td>
+        <td><a href="https://detail.1688.com/offer/616798975264.html">https://detail.1688.com/offer/616798975264.html</a></td>
+    </tr>
+    <tr>
+        <td>2</td><td>Knob sensor</td><td>Volume rotating</td>
+        <td>¥0.30</td><td>1</td><td>number</td><td>¥0.30</td>
+        <td><a href="https://detail.1688.com/offer/525249920099.html">https://detail.1688.com/offer/525249920099.html</a></td>
+    </tr>
+    <tr>
+        <td>3</td><td>Slider sensor</td><td>Time slider</td>
+        <td>¥8.50</td><td>1</td><td>number</td><td>¥8.50</td>
+        <td><a href="https://detail.1688.com/offer/620944385241.html">https://detail.1688.com/offer/620944385241.html</a></td>
+    </tr>
+    <tr>
+        <td>4</td><td>Preset Buttons</td><td>12mm</td>
+        <td>¥1.20</td><td>4</td><td>number</td><td>¥4.80</td>
+        <td><a href="https://detail.1688.com/offer/553840085955.html">https://detail.1688.com/offer/553840085955.html</a></td>
+    </tr>
+    <tr>
+        <td>5</td><td>Speaker</td><td>Play music</td>
+        <td>¥20.50</td><td>1</td><td>number</td><td>¥20.50</td>
+        <td><a href="https://detail.1688.com/offer/577097992097.html">https://detail.1688.com/offer/577097992097.html</a></td>
+    </tr>
+    <tr>
+        <td>6</td><td>ESP-32</td><td>  </td>
+        <td>¥295.00</td><td>1</td><td>number</td><td>¥17.80</td>
+        <td><a href="https://detail.1688.com/offer/559438952101.html">https://detail.1688.com/offer/559438952101.html</a></td>
+    </tr>
+    <tr>
+        <td>7</td><td>Lithium battery</td><td>7.4V, 2000mAh; 18*68*38(mm)</td>
+        <td>¥14.50</td><td>1</td><td>number</td><td>¥14.50</td>
+        <td><a href="https://detail.1688.com/offer/552756785529.html">https://detail.1688.com/offer/552756785529.html</a></td>
+        <td><a href="https://www.zhihu.com/question/22316112">https://www.zhihu.com/question/22316112</a></td>
+    </tr>
+    <tr>
+        <td>8</td><td>Power stabilizer</td><td>1117-5.0V</td>
+        <td>¥1.50</td><td>1</td><td>number</td><td>¥1.50</td>
+        <td><a href="https://detail.1688.com/offer/521204397546.html">https://detail.1688.com/offer/521204397546.html</a></td>
+    </tr>
+    <tr>
+        <td>9</td><td>NFC card</td><td>S50, 100*100mm</td>
+        <td>¥1.10</td><td>13</td><td>number</td><td>¥14.30</td>
+        <td><a href="https://detail.1688.com/offer/586761676525.html">https://detail.1688.com/offer/586761676525.html</a></td>
+    </tr>
+    <tr>
+        <td>10</td><td>Shell and accessory</td><td>SWooden + plastic cut</td>
+        <td>¥100.00</td><td>1</td><td>number</td><td>¥100.00</td>
+        <td><a href="https://detail.1688.com/offer/537638468134.html">https://detail.1688.com/offer/537638468134.html</a></td>
+    </tr>
+    <tr>
+        <td>11</td><td>Button caps</td><td> </td>
+        <td>¥2.00</td><td>6</td><td>number</td><td>¥12.00</td>
+        <td>Estimated</td>
+    </tr>
+    <tr>
+        <td>12</td><td>Stickers</td><td> </td>
+        <td>¥5.00</td><td>1</td><td>number</td><td>¥5.00</td>
+        <td>Estimated</td>
+    </tr>
+    <tr>
+        <td> </td><td> </td><td> </td><td> </td><td> </td><td>Total</td><td>27.08€</td>
+    </tr>
+    </tbody>
+</table>
+
+<table class="table table-hover">
+    <tbody>
+    <tr>
+        <th >VARIABLE COSTS
+            <br>Estimated: 1000 users per month, 10 hours of use per user</th>
+    </tr>
+    <th >FIXED COSTS</th>
+    <tr>
+        <td>#</td><td>Article</td><td>Description</td><td>Unit Cost</td><td>Quantity</td><td>Units</td><td>Subtotal</td><td>Link</td>
+    </tr>
+    <tr>
+        <td>1</td><td>Spotify music access</td><td> </td>
+        <td> </td><td> </td><td> </td><td> </td>
+        <td><a href="https://developer.spotify.com/support/">https://developer.spotify.com/support/</a></td>
+    </tr>
+    <tr>
+        <td>2</td><td>Data analysis</td><td> </td>
+        <td> </td><td> </td><td> </td><td> </td>
+        <td><a href="https://developer.spotify.com/documentation/web-api/">https://developer.spotify.com/documentation/web-api/</a></td>
+    </tr>
+    <tr>
+        <td> </td><td> </td><td> </td><td> </td><td> </td><td>Total</td>
+    </tr>
+    </tbody>
+</table>
+<div><img src="img/image%20160.png"></div>
+<div><img src="img/image%20161.jpg"></div>
+<div>
+    <p>Project Team #8 | Bingyu Cheng | Roberta Gargiulo | Lin Li | Livia Stevenin | Hongni Ye</p>
+</div>
+<div>
+    <p>Politecnico di Milano | Digital and Interaction Deisgn | Final Design Studio 2020-2021</p>
+</div>
+
+<a href="#page-top" class="cd-top">Top</a>
+
+
+<!-- script -->
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/modernizr.js"></script>
+<script src="js/script.js"></script>
+
+
+</body>
+</html>
