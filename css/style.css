@@ -6,7 +6,6 @@
 
 body {
     padding-top: 70px;
-
 	  color: #105528;
     font-family: 'Unna', sans-serif;
     font-size: 17px;
@@ -14,11 +13,12 @@ body {
     background-color: #F6ECE0;
 }
 
+
 html {
 	overflow-x:hidden;
 }
 
-h1,h2,h3,h4{
+h1,h2,{
 	font-family: 'Unna', sans-serif;
 	font-weight:200;
 	color: #FFFFFF;
@@ -29,6 +29,21 @@ h2{
 	font-family: 'Unna', sans-serif;
 	font-weight:200;
 	color: #000000;
+  font-size: 48px;
+}
+
+h3{
+	font-family: 'Unna', sans-serif;
+	font-weight:200;
+	color: #7C1D30;
+  font-size: 24px;
+  text-align:center;
+}
+
+h4{
+	font-family: 'Unna', sans-serif;
+	font-weight:200;
+	color: #FFFFFF;
   font-size: 48px;
 }
 
@@ -56,7 +71,7 @@ h6 {
 p{
 	font-family: 'Livvic', serif;
 	font-weight:300;
-  font-size: 20px;
+  font-size: 18px;
   color: #000000;
 }
 
@@ -205,6 +220,14 @@ a:hover,a:focus {
 	width: 30px;
 }
 
+.mvp-body {
+    padding-top: 70px;
+	  color: #105528;
+    font-family: 'Unna', sans-serif;
+    font-size: 17px;
+    line-height: 1.8 !important;
+    background-color: #FFFFFF;
+}
 
 /* Intro */
 
@@ -266,6 +289,32 @@ a:hover,a:focus {
   text-align:center;
 }
 
+.MVP{
+    text-align:center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.MVP-title{
+  text-align:center;
+  font-family: 'Unna';
+  color:#7C1D30;
+  font-size: 48px;
+  padding-top: 180px;
+  padding-bottom: 40px;
+  line-height: 110%;
+}
+
+.MVP-title-side{
+  text-align:left;
+  font-family: 'Unna';
+  color:#7C1D30;
+  font-size: 32px;
+  padding-left: 16px;
+  padding-top: 180px;
+  padding-bottom: 40px;
+  line-height: 110%;
+}
 
 
 /* About */
@@ -303,6 +352,21 @@ a:hover,a:focus {
   position:relative;;
   text-align:center;
   line-height: 110%;
+}
+
+.chartmap{
+  padding-top: 60px;
+  padding-bottom: 120px;
+  position: relative;
+  text-align:center;
+}
+
+.chartmap1{
+  padding-top: 60px;
+  padding-bottom: 120px;
+  position: relative;
+  text-align:center;
+  background-color: #F6ECE0;
 }
 
 .big-letter p:first-child:first-letter {

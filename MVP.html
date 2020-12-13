@@ -19,7 +19,7 @@
 </head>
 
 <body>
-
+<div class="mvp-body">
 <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container">
         <div class="navbar-header">
@@ -49,71 +49,70 @@
 
 
 <!-- About -->
-<section class="about" id="about">
-    <div class="container about">
-        <div>
-            Minimum Viable Product
-            Technical Specification
+<section>
+    <div class="container">
+        <div class="row MVP">
+          <div class="col-md-12">
+            <h3><b>Minimum Viable Product</b>
+              <br>
+              <br>
+            Technical Specification</h3>
+
+          <div class="MVP-title"><b>Interaction Flowchart</b></div>
         </div>
-    </div>
-    <div class="sub-title"><b>Interaction Flowcart</b></div>
-    <div><img src="img/doc1.png"></div>
+      </div>
+        <div class="chartmap1"><img src="img/doc1.png"> </div>
 
-</section>
-<div class="sub-title"><b>Scenario-based Product<br>Interaction Network</b></div>
+
+
+
+<div class="MVP-title"><b>Scenario-based Product
+  <br>Interaction Network</b>
+</div>
+<div class="container">
 <div class="row">
-    <div class="col-md-6">
-
-        <p>
+    <div class="col-md-12">
+        <h3>
             The elderly uses Tune to listen to the music and share with his daughter
-        </p>
-
+        </h3>
+<div class="chartmap" ><img class="img-rounded"src="img/doc2.png"> </div>
 
     </div>
+
+
+
+
+<div class="MVP-title"><b>Product Design Specification</b></div>
+<div><h3>Final product</h3></div> <br>
+<div>
+    <div class="chartmap"><img class="img-rounded" src="img/explo.png"></div>
 </div>
 
-
-<div><img src="img/doc2.png"> </div>
-<div><h2>Product Design Specification</h2></div>
-<div><p>Final product</p></div>
-<div>
+<div class="MVP-title-side"><b>NFC Cards with RFID Module</b></div>
+<div class="col-md-8">
     <p>
-        NFC Cards with RFID Module
+      When the user presses the "save" button, the music will be saved to an <b>NFC card </b>in<br>
+      an instant by the <b>RFID module </b>in the device, which can also read the card to<br>
+     playback the music without delay. The data stored in the card takes the format of <br>
+     the song ID, matching the music file from the database.<br>
+     <br>
+     Plus, the NFC card is <b>compatible</b> with almost all the mainstream <b>mobile phones</b>, <br>
+     making it possible for the younger generations to play the in-card music with their<br>
+    phones, a way to facilitate communication among the generations.<br>
+    <br>
+
+    The music in a card is <b>not able to be rewritten</b> due to the consideration of<br>
+     the elderly being more prone to mistake, also because the song relates to a special<br>
+      memory of them, which they do not wish to change or wipe away.
     </p>
 </div>
-<div>
-    <p>
-        When the user presses the "save" button, the music will be
-        saved to an NFC card in an instant by the RFID module in the
-        device, which can also read the card to playback the music
-        without delay. The data stored in the card takes the format of
-        the song ID, matching the music file from the database.
 
-        Plus, the NFC card is compatible with almost all the
-        mainstream mobile phones, making it possible for the
-        younger generations to play the in-card music with their
-        phones, a way to facilitate communication among the
-        generations.
 
-        The music in a card is not able to be rewritten due to the
-        consideration of the elderly being more prone to mistake, also
-        because the song relates to a special memory of them, which
-        they do not wish to change or wipe away.
-    </p>
-</div>
-<div><h2>Physical prototype</h2></div>
-<div><img src="img/explosive%20view%201.png"></div>
-<div>
-    <p>
-        In the physical prototype, we focus more on the
-        user experience, so decide to replace the ESP-32
-        board which provides internet connection to an
-        Arduino UNO + MP3 module to create the music
-        experience.
-    </p>
-</div>
+
 <div><img src="img/IMG_6987%201.png"></div>
 <div><img src="img/Frame7.jpg"></div>
+
+
 <div><h1>Bill of Materials and Services</h1></div>
 <table class="table table-hover">
     <tbody>
@@ -224,6 +223,9 @@
 <div>
     <p>Politecnico di Milano | Digital and Interaction Deisgn | Final Design Studio 2020-2021</p>
 </div>
+</div>
+    </div>
+</section>
 
 <a href="#page-top" class="cd-top">Top</a>
 
@@ -234,6 +236,6 @@
 <script src="js/modernizr.js"></script>
 <script src="js/script.js"></script>
 
-
+</div>
 </body>
 </html>
