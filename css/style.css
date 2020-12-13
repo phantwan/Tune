@@ -18,11 +18,36 @@ html {
 	overflow-x:hidden;
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,h2,h3,h4{
 	font-family: 'Unna', sans-serif;
 	font-weight:200;
-	color: #222;
+	color: #FFFFFF;
   font-size: 48px;
+}
+
+h2{
+	font-family: 'Unna', sans-serif;
+	font-weight:200;
+	color: #000000;
+  font-size: 48px;
+}
+
+
+h5{
+  font-family: 'Livvic', serif;
+  font-weight: 100 ;
+  color: #FFFFFF;
+  font-size: 28px;
+
+}
+
+h6 {
+	font-family: 'Unna', sans-serif;
+	font-weight:200;
+	color: #000000;
+  font-size: 18px;
+  text-align:center;
+  padding-bottom: 100px;
 }
 
 
@@ -37,6 +62,7 @@ p{
 
 section {
 	padding-top:0px;
+  padding:0px;
 	padding-bottom:85px;
 }
 
@@ -183,7 +209,8 @@ a:hover,a:focus {
 /* Intro */
 
 .intro {
-	padding-top:60px;
+	padding-top:0px;
+  padding-left: 0px;
 	padding-bottom:25px;
   position: relative;
 }
@@ -198,13 +225,46 @@ a:hover,a:focus {
   padding-top:60px;
 	padding-bottom:25px;
   padding-left:25px;
+}
 
+.context-text{
+  padding-left: 10px;
+  padding-top: 180px;
+  padding-bottom: 40px;
+  padding-right: 0px;
+}
+
+.context-pic{
+  padding-left: 10px;
+  padding-top:30px;
+  padding-right: 0px;
+  padding-bottom: 100px;
+}
+
+.big-idea{
+  background-color: #826754;
+  padding-left: 200px;
+  padding-top: 150px;
+  padding-right: 200px;
+  padding-bottom: 200px;
+}
+
+.big-idea-text{
+  padding-left: 240px;
+  padding-top: 50px;
+  padding-right: 200px;
+  padding-bottom: 50px;
 
 }
 
+.more{
+  text-align:center;
+}
 
-
-
+.team{
+  padding-bottom: 80px;
+  text-align:center;
+}
 
 
 
@@ -215,10 +275,10 @@ a:hover,a:focus {
 	font-weight:100;
 	color: #7C1D30;
   font-size: 48px;
-  padding-top: 0px;
+  padding-top: 50px;
 	padding-right: 180px;
 	padding-left: 180px;
-  padding-bottom: 105px;
+  padding-bottom: 60px;
   line-height: 110%;
 
 }
@@ -228,11 +288,20 @@ a:hover,a:focus {
   font-family: 'Unna';
   color:#7C1D30;
   font-size: 48px;
-  padding-top: 0px;
+  padding-top: 80px;
   padding-right: 1190px;
 	padding-left: 0px;
   padding-bottom: 16px;
-  text-align:right;
+  text-align:left;
+  line-height: 110%;
+}
+
+.sub-title-center{
+  font-family: 'Unna';
+  color:#7C1D30;
+  font-size: 48px;
+  position:relative;;
+  text-align:center;
   line-height: 110%;
 }
 
@@ -519,14 +588,22 @@ a:hover,a:focus {
 /* Footer */
 
 footer {
-	padding-bottom:85px;
+
+  position: absolute;
+  padding-bottom: 100px;
+  text-align: center;
+
 }
 
-footer p {
-	font-family: 'Open Sans', sans-serif;
+footer-text {
+	font-family: 'Unna', sans-serif;
 	font-weight:200;
-	font-size:0.7em;
-	text-transform:uppercase;
+	font-size:16px;
+  color:#000000;
+  text-align:center;
+  margin:auto;
+  float: left;
+
 }
 
 
