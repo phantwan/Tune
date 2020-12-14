@@ -10,7 +10,7 @@ body {
     font-family: 'Unna', sans-serif;
     font-size: 17px;
     line-height: 1.8 !important;
-    background-color: #F6ECE0;
+    background-color: #FFFFFF;
 }
 
 
@@ -113,7 +113,7 @@ table  thead {
 table td,table th{
     border:1px solid #ccc;
     overflow: hidden;/**溢出隐藏**/
-    white-space: nowrap;/**不换行**/
+
     text-overflow: ellipsis;/**溢出不可见部分使用...代替**/
 
 
@@ -165,8 +165,8 @@ td{
 }
 
 .navbar-default {
-    background-color: #F6ECE0;
-    border-color: #F6ECE0;
+    background-color: #FFFFFF;
+    border-color: #FFFFFF;
 }
 
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
@@ -407,7 +407,6 @@ right:30px;
   padding-bottom: 120px;
   position: relative;
   text-align:center;
-  background-color: #F6ECE0;
 }
 
 .big-letter p:first-child:first-letter {
