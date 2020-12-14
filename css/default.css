@@ -1,5 +1,7 @@
 /* General Demo Style */
-@import url(http://fonts.googleapis.com/css?family=Lato:400,700|Alegreya+SC:700|Cutive+Mono);
+@import url(http://fonts.googleapis.com/css?family=Livvc:400,700|Alegreya+SC:700|Cutive+Mono);
+@import url('https://fonts.googleapis.com/css2?family=Unna&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Livvic&family=Unna&display=swap');
 
 html { height: 100%; }
 
@@ -29,7 +31,7 @@ html { height: 100%; }
 }
 
 body {
-    font-family: 'Lato', Calibri, Arial, sans-serif;
+    font-family: 'Livvc', Calibri, Arial, sans-serif;
     background: #810606;
     font-weight: 400;
     font-size: 15px;
