@@ -99,6 +99,26 @@ img{
   max-height:100%;
 }
 
+table {
+    width: 100%;
+    text-align: center;
+    border-spacing: 0;/**设置相邻单元格的边框间的距离**/
+    border-collapse: collapse;/**边框会合并为一个单一的边框**/
+    color:#5a5a5a;
+    table-layout: fixed;/**固定table表格**/
+}
+table  thead {
+    background-color: #d9edf7;
+}
+table td,table th{
+    border:1px solid #ccc;
+    overflow: hidden;/**溢出隐藏**/
+    white-space: nowrap;/**不换行**/
+    text-overflow: ellipsis;/**溢出不可见部分使用...代替**/
+
+
+}
+
 th{
   font-family: 'Unna', serif;
   font-weight:300;
@@ -253,10 +273,12 @@ td{
 /* Intro */
 
 .intro {
-	padding-top:0px;
-  padding-left: 0px;
-	padding-bottom:25px;
-  position: relative;
+text-align: right;
+position:absolute;
+z-index:2;
+left:280px;
+top:180px;
+right:30px;
 }
 
 .intro-text{
@@ -287,9 +309,7 @@ td{
 
 .big-idea{
   background-color: #826754;
-  padding-left: 200px;
   padding-top: 150px;
-  padding-right: 200px;
   padding-bottom: 200px;
   text-align: center;
 }
@@ -297,7 +317,6 @@ td{
 .big-idea-text{
   text-align: center;
   padding-top: 50px;
-
   padding-bottom: 50px;
 
 }
@@ -341,16 +360,15 @@ td{
 
 /* About */
 .HMW{
-  float:center;
+  float:left;
   font-family: 'Unna';
-	font-weight:100;
+	font-weight:200;
 	color: #7C1D30;
   font-size: 48px;
   padding-top: 50px;
-	padding-right: 180px;
-	padding-left: 180px;
   padding-bottom: 60px;
   line-height: 110%;
+  text-align: center;
 
 }
 
