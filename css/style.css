@@ -99,6 +99,7 @@ img{
   max-height:100%;
 }
 
+
 table {
     width: 100%;
     text-align: center;
@@ -362,7 +363,7 @@ right:30px;
   font-family: 'Unna';
   color:#7C1D30;
   font-size: 32px;
-  padding-top: 50px;
+  padding-top: 150px;
   padding-bottom: 0px;
   line-height: 110%;
 }
@@ -383,7 +384,7 @@ right:30px;
   color:#7C1D30;
   font-size: 100px;
   padding-left: 380px;
-  padding-top: 0px;
+  padding-top: 10px;
   padding-bottom: 0px;
   line-height: 110%;
 }
@@ -490,10 +491,18 @@ right:30px;
   right:0;
 }
 
+.overlay_2{
+  position:absolute;
+  top:80px;
+  left:420px;
+  right:40px;
+
+}
+
 .overlay-text{
   position:absolute;
   top:50px;
-  left:200px;
+  left:150px;
   right:0;
 }
 
@@ -503,10 +512,18 @@ right:30px;
   padding-left: 250px;
 }
 
+.img_scd_2{
+  width: 90%;
+  height:90%;
+  padding-left: 50px;
+  padding-right: 150px;
+}
 .bgimg_Felica{
   background-image: url(img/Felica.png);
   background-size: 50%;
 }
+
+
 
 /* Gallery */
 
