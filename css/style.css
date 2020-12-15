@@ -30,6 +30,8 @@ h2{
 	font-weight:200;
 	color: #000000;
   font-size: 48px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 h3{
@@ -99,7 +101,9 @@ img{
   max-height:100%;
 }
 
-
+img:hover{
+  cursor: pointer;
+}
 table {
     width: 100%;
     text-align: center;
@@ -133,6 +137,31 @@ td{
   font-weight:300;
   font-size: 16px;
   color: #7C1D30;
+}
+
+.col-xs-5ths, .col-sm-5ths, .col-md-5ths, .col-lg-5ths {
+position: relative;
+min-height: 1px;
+padding-right: 10px;
+padding-left: 10px;
+}
+@media ( min-width : 768px) {
+.col-sm-5ths {
+width: 20%;
+float: left;
+}
+}
+@media ( min-width : 992px) {
+.col-md-5ths {
+width: 20%;
+float: left;
+}
+}
+@media ( min-width : 1200px) {
+.col-lg-5ths {
+width: 20%;
+float: left;
+}
 }
 
 
@@ -289,9 +318,9 @@ right:30px;
   font-weight:200;
   color: #000000;
   font-size: 48px;
-  padding-top:60px;
-	padding-bottom:25px;
-  padding-left:25px;
+  padding-top:120px;
+  padding-right: 220px;
+  text-align: right;
 }
 
 .context-text{
@@ -545,6 +574,10 @@ right:30px;
 .side-photo{
   text-align: left;
   padding-left: 0px;
+}
+
+.teachers-photo{
+  padding-top: 40px;
 }
 /* Gallery */
 
