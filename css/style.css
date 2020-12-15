@@ -78,7 +78,7 @@ p{
 section {
 	padding-top:0px;
   padding:0px;
-	padding-bottom:45px;
+	padding-bottom:150px;
 }
 
 .no-gutter > [class*='col-'] {
@@ -310,7 +310,7 @@ right:30px;
 
 .big-idea{
   background-color: #826754;
-  padding-top: 150px;
+  padding-top: 250px;
   padding-bottom: 200px;
   text-align: center;
 }
