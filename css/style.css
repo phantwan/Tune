@@ -310,7 +310,7 @@ right:30px;
 
 .big-idea{
   background-color: #826754;
-  padding-top: 250px;
+  padding-top: 150px;
   padding-bottom: 200px;
   text-align: center;
 }
@@ -463,6 +463,9 @@ right:30px;
 	padding-left: –0.03em;
 }
 
+.img_long{
+  width: 50%
+}
 /* Firefox Fix */
 
 @-moz-document url-prefix() {
