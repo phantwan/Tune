@@ -96,25 +96,25 @@
             // define images
             var images = [
               "img/scrollimg/imagesequence_01.png",
-              "img/scrollimg/imagesequence_02.png",
+
               "img/scrollimg/imagesequence_03.png",
-              "img/scrollimg/imagesequence_04.png",
+
               "img/scrollimg/imagesequence_05.png",
-              "img/scrollimg/imagesequence_06.png",
+
               "img/scrollimg/imagesequence_07.png",
-              "img/scrollimg/imagesequence_08.png",
+
               "img/scrollimg/imagesequence_09.png",
-              "img/scrollimg/imagesequence_11.png",
+
               "img/scrollimg/imagesequence_12.png",
-              "img/scrollimg/imagesequence_13.png",
+
               "img/scrollimg/imagesequence_14.png",
-              "img/scrollimg/imagesequence_15.png",
+
               "img/scrollimg/imagesequence_16.png",
-              "img/scrollimg/imagesequence_17.png",
+
               "img/scrollimg/imagesequence_18.png",
-              "img/scrollimg/imagesequence_19.png",
+
               "img/scrollimg/imagesequence_20.png",
-              "img/scrollimg/imagesequence_21.png",
+
               "img/scrollimg/imagesequence_22.png"
             ];
 
@@ -126,8 +126,8 @@
               {
                 curImg: images.length - 1,	// animate propery curImg to number of images
                 roundProps: "curImg",				// only integers so it can be used as an array index
-                repeat: 3,									// repeat 3 times
-                immediateRender: true,			// load first image automatically
+                repeat: 1,									// repeat 3 times
+                immediateRender: false,			// load first image automatically
                 ease: Linear.easeNone,			// show every image the same ammount of time
                 onUpdate: function () {
                   $("#myimg").attr("src", images[obj.curImg]); // set the image source
