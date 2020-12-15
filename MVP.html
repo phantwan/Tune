@@ -93,7 +93,7 @@
         <h3>
             The elderly uses Tune to listen to the music and share with his daughter
         </h3>
-        <!-- try the reveal on scrolling -->
+        <!-- reveal on scrolling -->
 
         <script>
         	// init controller
@@ -246,28 +246,119 @@
 </div>
 
 
+<!-- Text reveals on scrolling -->
+
+<script>
+  // init controller
+  var controller = new ScrollMagic.Controller();
+</script>
+
+<style type="text/css">
+  .digit {
+    opacity: 0;
+    -webkit-transform: translateX(-40px);
+       -moz-transform: translateX(-40px);
+        -ms-transform: translateX(-40px);
+         -o-transform: translateX(-40px);
+            transform: translateX(-40px);
+    -webkit-transition: all 1.6s ease-out;
+       -moz-transition: all 1.6s ease-out;
+        -ms-transition: all 1.6s ease-out;
+         -o-transition: all 1.6s ease-out;
+            transition: all 1.6s ease-out;
+  }
+  .digit.visible {
+    opacity: 1;
+    -webkit-transform: none;
+       -moz-transform: none;
+        -ms-transform: none;
+         -o-transform: none;
+            transform: none;
+  }
+  .digit:nth-child(2) {
+    margin-top: 10px;
+  }
+  .digit:nth-child(3) {
+    margin-top: 20px;
+  }
+  .digit:nth-child(4) {
+    margin-top: 30px;
+  }
+  .digit:nth-child(5) {
+    margin-top: 40px;
+  }
+</style>
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+<div class="spacer s2"></div>
+<div class="spacer s0"></div>
+<div class="spacer s0"></div>
+<div id="reveal-elements">
+  <div class="box1 digit ">
+    <div class="MVP-title-side"><b>NFC Cards with RFID Module</b></div>
+    <div class="box2 overlay digit side-photo "><img width="50%" height="50%" src="img/cardphone.png"></div>
+  </div>
+  <div><p>
+  When the user presses the "save" button, the music will be saved to an <b>NFC card </b>in<br>
+  an instant by the <b>RFID module </b>in the device, which can also read the card to<br>
+ playback the music without delay. The data stored in the card takes the format of <br>
+ the song ID, matching the music file from the database.<br>
+ <br>
+ Plus, the NFC card is <b>compatible</b> with almost all the mainstream <b>mobile phones</b>, <br>
+ making it possible for the younger generations to play the in-card music with their<br>
+phones, a way to facilitate communication among the generations.<br>
+<br>
+
+The music in a card is <b>not able to be rewritten</b> due to the consideration of<br>
+ the elderly being more prone to mistake, also because the song relates to a special<br>
+  memory of them, which they do not wish to change or wipe away.
+</p></div>
 
 
 
 
+    <div class="box2 digit ">
+  <div class="MVP-title-side right-side"><b>The Welcome Kit</b></div></div>
 
-<div class="col-md-8">
-  <div class="MVP-title-side"><b>NFC Cards with RFID Module</b></div>
+</div>
     <p>
-      When the user presses the "save" button, the music will be saved to an <b>NFC card </b>in<br>
-      an instant by the <b>RFID module </b>in the device, which can also read the card to<br>
-     playback the music without delay. The data stored in the card takes the format of <br>
-     the song ID, matching the music file from the database.<br>
-     <br>
-     Plus, the NFC card is <b>compatible</b> with almost all the mainstream <b>mobile phones</b>, <br>
-     making it possible for the younger generations to play the in-card music with their<br>
-    phones, a way to facilitate communication among the generations.<br>
-    <br>
+     A welcome kit includes three pre-recorded cards that contain a short audio<br>
+     introduction of the device and another ten blank cards, and it comes along in the<br>
+      package to help the elderly users<b> get onboard</b>. More music cards can be ordered at <br>
+      the price of 3€ for ten pieces.<br>
+      </p>
 
-    The music in a card is <b>not able to be rewritten</b> due to the consideration of<br>
-     the elderly being more prone to mistake, also because the song relates to a special<br>
-      memory of them, which they do not wish to change or wipe away.
-    </p>
+</div>
+</div>
+</div>
+
+
+
+  <div class="box1 digit "><img width="1160px"src="img/task4.png"></div>
+</div>
+
+<script>
+    // build scenes
+    var revealElements = document.getElementsByClassName("digit");
+    for (var i=0; i<revealElements.length; i++) { // create a scene for each element
+      new ScrollMagic.Scene({
+                triggerElement: revealElements[i], // y value not modified, so we can use element as trigger as well
+                offset: 0,												 // start a little later
+                triggerHook: 0.9,
+              })
+              .setClassToggle(revealElements[i], "visible") // add class toggle
+            //	.addIndicators({name: "digit " + (i+1) }) // add indicators (requires plugin)
+              .addTo(controller);
+    }
+</script>
+
+
+
+
+
 
 <div class="MVP-title-side"><b>The Welcome Kit</b></div>
   <p>
@@ -296,11 +387,16 @@
 </div>
 </div>
 
-
-
-<div><img src="img/IMG_6987%201.png"></div>
-<div><img src="img/Frame7.jpg"></div>
-
+<section>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+<div><img class="img_eda"src="img/EDA.png"></div>
+<div><img class="overlay_wires" src="img/wires.png"></div>
+</div>
+</div>
+</div>
+</section>
 
 <div class="row">
 <div class="col-md-12">
