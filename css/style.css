@@ -357,6 +357,48 @@ right:30px;
   line-height: 110%;
 }
 
+.quote-title-side{
+  text-align:center;
+  font-family: 'Unna';
+  color:#7C1D30;
+  font-size: 32px;
+  padding-top: 50px;
+  padding-bottom: 0px;
+  line-height: 110%;
+}
+
+.quote-text{
+  text-align:left;
+  font-family: 'Unna';
+  color:#000000;
+  font-size: 24px;
+  padding-left: 450px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  line-height: 110%;
+}
+.quote-sybol-l{
+  text-align:left;
+  font-family: 'Unna';
+  color:#7C1D30;
+  font-size: 100px;
+  padding-left: 380px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  line-height: 110%;
+}
+.quote-sybol-r{
+  text-align:left;
+  font-family: 'Unna';
+  color:#7C1D30;
+  font-size: 100px;
+  padding-left: 900px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  line-height: 110%;
+}
+
+
 
 /* About */
 .HMW{
@@ -441,7 +483,30 @@ right:30px;
   filter: none;
 }
 
+.overlay{
+  position:absolute;
+  top:80px;
+  left:0px;
+  right:0;
+}
 
+.overlay-text{
+  position:absolute;
+  top:50px;
+  left:200px;
+  right:0;
+}
+
+.img_scd{
+  width: 90%;
+  height:90%;
+  padding-left: 250px;
+}
+
+.bgimg_Felica{
+  background-image: url(img/Felica.png);
+  background-size: 50%;
+}
 
 /* Gallery */
 
