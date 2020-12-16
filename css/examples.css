@@ -245,7 +245,7 @@ h1.badge.velocity:after {
 	min-width: 100%;
 }
 
-.box1, .box2, .box3 {
+.box2, .box3 {
 	display: inline-block;
 	position: relative;
 	border-radius: 8px;
@@ -970,7 +970,7 @@ a.viewsource:before {
 }
 
 #imagesequence {
-	height: 800px;
+	width:100%
 }
 
 .copyright {

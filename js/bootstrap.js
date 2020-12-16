@@ -2361,3 +2361,8 @@ if (typeof jQuery === 'undefined') {
   })
 
 }(jQuery);
+
+$(".nav a").on("click", function(){
+   $(".nav").find(".active").removeClass("active");
+   $(this).parent().addClass("active");
+});

@@ -54,7 +54,7 @@
         <div class="collapse navbar-collapse" id="main-menu">
             <ul class="nav navbar-nav navbar-right">
               <li><a href="index.html">Home</a></li>
-              <li><a href="MVP.html">MVP</a></li>
+              <li><a class="active" href="MVP.html">MVP</a></li>
               <li><a href="story.html">Their Stories</a></li>
               <li><a href="https://tuuune.itch.io/tune">Demo</a></li>
             </ul>
@@ -238,70 +238,33 @@
     </div>
 
 
-
-
-
-
-
-
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
         <div class="MVP-title"><b>Interaction Flowchart</b></div>
-          <div class="chartmap1"><img src="img/doc1.png"> </div>
+        <div class="chartmap1 col-md-12"><img src="img/doc1.png"> </div>
+        </div>
+      </div>
+    </div>
 <!-- Text reveals on scrolling -->
 
+<section>
 <script>
   // init controller
   var controller = new ScrollMagic.Controller();
 </script>
 
-<style type="text/css">
-  .digit {
-    opacity: 0;
-    -webkit-transform: translateX(-40px);
-       -moz-transform: translateX(-40px);
-        -ms-transform: translateX(-40px);
-         -o-transform: translateX(-40px);
-            transform: translateX(-40px);
-    -webkit-transition: all 1.6s ease-out;
-       -moz-transition: all 1.6s ease-out;
-        -ms-transition: all 1.6s ease-out;
-         -o-transition: all 1.6s ease-out;
-            transition: all 1.6s ease-out;
-  }
-  .digit.visible {
-    opacity: 1;
-    -webkit-transform: none;
-       -moz-transform: none;
-        -ms-transform: none;
-         -o-transform: none;
-            transform: none;
-  }
-  .digit:nth-child(2) {
-    margin-top: 10px;
-  }
-  .digit:nth-child(3) {
-    margin-top: 20px;
-  }
-  .digit:nth-child(4) {
-    margin-top: 30px;
-  }
-  .digit:nth-child(5) {
-    margin-top: 40px;
-  }
-</style>
 
 
 <div class="container">
   <div class="row">
-    <div class="col-md-12">
-<div class="spacer s2"></div>
-<div class="spacer s0"></div>
-<div class="spacer s0"></div>
 <div id="reveal-elements">
-  <div class="box1 digit ">
+  <div class="box1 digit col-md-12">
     <div class="MVP-title-side"><b>NFC Cards with RFID Module</b></div>
-    <div class="box2 overlay digit side-photo "><img width="50%" height="50%" src="img/cardphone.png"></div>
+
   </div>
-  <div><p>
+
+  <div class="col-md-8"><p>
   When the user presses the "save" button, the music will be saved to an <b>NFC card </b>in<br>
   an instant by the <b>RFID module </b>in the device, which can also read the card to<br>
  playback the music without delay. The data stored in the card takes the format of <br>
@@ -316,28 +279,49 @@ The music in a card is <b>not able to be rewritten</b> due to the consideration 
  the elderly being more prone to mistake, also because the song relates to a special<br>
   memory of them, which they do not wish to change or wipe away.
 </p></div>
+<div class="col-md-4">
+ <img class="overlay-right-side"src="img/welcomekit.png"></div>
 
 
+    <div class="box2 digit col-md-4">
+  <div class="MVP-title-side right-side "><b>The Welcome Kit</b></div></div>
 
-
-    <div class="box2 digit ">
-  <div class="MVP-title-side right-side"><b>The Welcome Kit</b></div></div>
-
-</div>
+  <div class="col-md-8">
+ <img class="overlay-left-side "src="img/cardphone.png"></div>
+   <div class="col-md-4">
     <p>
      A welcome kit includes three pre-recorded cards that contain a short audio<br>
      introduction of the device and another ten blank cards, and it comes along in the<br>
-      package to help the elderly users<b> get onboard</b>. More music cards can be ordered at <br>
+      package to help the elderly users<b> get onboard</b>. More music cards can be ordered at
       the price of 3€ for ten pieces.<br>
-      </p>
+      <br>
+    </p></div>
+
+    <div class="box2 digit col-md-12 ">
+      <div class="MVP-title-side"><b>Music Switch</b></div></div>
+        <div class="col-md-12 ">
+      <p>
+            Early research shows that the elderly strongly prefer the music of their young adult
+             years and that music and reminiscence are valuable for improving their wellbeings.
+            Therefore, more <b>delicate and personal approaches </b>to choosing music are
+            adopted: a slider corresponding to the timeline of their lives, and four thematics
+             evoking the rich emotions from the past, both being expressed through the music.<br>
+
+           </p></div>
+
+        <div class="col-md-6"><img class="overlay-right-side"src="img/Zhu-radio.png"></div>
+        <div class="box2 digit col-md-6">
+      <div class="MVP-title-side"><b>Internet Access</b></div></div>
+        <div class="col-md-6">
+        <p>
+            With the partnership with Spotify, the device can access the numerous music<br>
+           resource online and sort them accordingly. Using the Spotify API it can also learn<br>
+        from the user's <b>preferences </b>of the saved songs to generate a personalized playlist.<br>
+      </p>  </div>
 
 </div>
 </div>
 </div>
-
-
-
-  <div class="box1 digit "><img width="1160px"src="img/Task4.png"></div>
 </div>
 
 <script>
@@ -355,49 +339,28 @@ The music in a card is <b>not able to be rewritten</b> due to the consideration 
     }
 </script>
 
-
-
-
-
-
-<div class="MVP-title-side"><b>The Welcome Kit</b></div>
-  <p>
-   A welcome kit includes three pre-recorded cards that contain a short audio<br>
-   introduction of the device and another ten blank cards, and it comes along in the<br>
-    package to help the elderly users<b> get onboard</b>. More music cards can be ordered at <br>
-    the price of 3€ for ten pieces.<br>
-
-    </p>
-
-<div class="MVP-title-side"><b>Music Switch</b></div>
-      <p>
-       Early research shows that the elderly strongly prefer the music of their young adult <br>
-       years and that music and reminiscence are valuable for improving their wellbeings. <br>
-      Therefore, more <b>delicate and personal approaches </b>to choosing music are  <br>
-      adopted: a slider corresponding to the timeline of their lives, and four thematics<br>
-       evoking the rich emotions from the past, both being expressed through the music.<br>
-
-        </p>
-<div class="MVP-title-side"><b>Internet Access</b></div>
-              <p>
-              With the partnership with Spotify, the device can access the numerous music<br>
-               resource online and sort them accordingly. Using the Spotify API it can also learn<br>
-                from the user's <b>preferences </b>of the saved songs to generate a personalized playlist.<br>
-                </p>
 </div>
 </div>
+</div>
+</div>
+  </div>
+<section/>
+
 
 <section>
 <div class="container">
   <div class="row">
     <div class="col-md-12">
-<div><img class="img_eda"src="img/EDA.png"></div>
-<div><img class="overlay_wires" src="img/wires.png"></div>
+      <div class="MVP-title"><h3>Physical product</h3></div>
+<div class="img_eda"><img src="img/EDA.png"></div>
+<div class="overlay_wires"><img  src="img/wires.png"></div>
 </div>
 </div>
 </div>
 </section>
 
+<section id="table">
+  <div class="container">
 <div class="row">
 <div class="col-md-12">
 <div  class="MVP-title"><b>Bill of Materials and Services</b></div>
@@ -503,12 +466,9 @@ The music in a card is <b>not able to be rewritten</b> due to the consideration 
 </table>
 </div>
 </div>
-
-
 </div>
-
-    </div>
 </section>
+
 
 <footer>
 <div class="container">
