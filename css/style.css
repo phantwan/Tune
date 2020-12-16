@@ -3,6 +3,7 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300);
 @import url('https://fonts.googleapis.com/css2?family=Unna&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Livvic&family=Unna&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Snippet&display=swap');
 
 body {
     padding-top: 70px;
@@ -303,6 +304,13 @@ float: left;
     background-color: #FFFFFF;
 }
 
+.photo-text{
+  font-family: 'Snippet', sans-serif;
+	font-weight:200;
+	color: #FFFFFF;
+  font-size: 48px;
+
+}
 /* Intro */
 
 .intro {
