@@ -31,6 +31,10 @@
     <script type="text/javascript" src="js/ScrollMagic/ScrollMagic.js"></script>
     <script type="text/javascript" src="js/ScrollMagic/plugins/animation.gsap.js"></script>
     <script type="text/javascript" src="js/ScrollMagic/plugins/debug.addIndicators.js"></script>
+
+    <bgsound id="mu1" loop="-1">
+    <bgsound id="mu2" loop="-1">
+    <bgsound id="mu3" loop="-1">
   </head>
 
 <body>
@@ -112,7 +116,7 @@
 	<div class="grid grid--effect-alphard">
 
 
-		<a href="#" class="grid__item grid__item--c1">
+		<a class="grid__item grid__item--c1">
 			 <div class="col-xs-6 col-md-4 bgimg">
 			<div class="stack">
 				<div class="stack__deco"></div>
@@ -122,7 +126,12 @@
 				<div class="stack__figure ">
 						<img src="img/bgcircle.png" alt="Image"/>
 						<div class="overlay">
-					<img class="img_radio" src="img/Felica-radio.png" alt="Image"/> </div>
+          <audio id="music1" src="MUSICA/music1.mp3" loop autoplay></audio>
+					<img class="img_radio" src="img/Felica-radio.png" onClick="play()" alt="Image"/>
+
+
+        </div>
+
 					<div class="overlay-text"><p>Nessun Dorma <br>
 						 50s, Relaxing</p>
 					 </div>
@@ -135,7 +144,7 @@
 			</div>
 		</a>
 
-		<a href="#" class="grid__item grid__item--c2">
+		<a  class="grid__item grid__item--c2">
 			 <div class="col-xs-12 col-md-8">
 				 	<img class="img_scd" src="img/Felica.png" alt="Image"/>
 			<div class="stack">
@@ -217,7 +226,7 @@
     </div>
     </a>
 
-		<a href="#" class="grid__item grid__item--c1">
+		<a class="grid__item grid__item--c1">
 			 <div class="col-xs-6 col-md-4 bgimg">
 			<div class="stack">
 				<div class="stack__deco"></div>
@@ -227,7 +236,8 @@
 				<div class="stack__figure ">
 						<img src="img/bgcircle.png" alt="Image"/>
 						<div class="overlay">
-					<img  src="img/Antonia-radio.png" alt="Image"/> </div>
+              <audio id="music2" src="MUSICA/music2.mp3" loop autoplay></audio>
+					<img  src="img/Antonia-radio.png" onClick="play()" alt="Image"/> </div>
 					<div class="overlay-text"><p>Escrito nas Estrelas <br>
 						 70s, Happy</p>
 					 </div>
@@ -280,7 +290,7 @@
 	<div class="grid grid--effect-alphard">
 
 
-		<a href="#" class="grid__item grid__item--c1">
+		<a class="grid__item grid__item--c1">
 			 <div class="col-xs-6 col-md-4 bgimg">
 			<div class="stack">
 				<div class="stack__deco"></div>
@@ -290,7 +300,8 @@
 				<div class="stack__figure ">
 						<img src="img/bgcircle.png" alt="Image"/>
 						<div class="overlay">
-					<img  src="img/Zhu-radio.png" alt="Image"/> </div>
+              <audio id="music3" src="MUSICA/music3.mp3" loop autoplay></audio>
+					<img  src="img/Zhu-radio.png" onClick="play()" alt="Image"/> </div>
 					<div class="overlay-text"><p>Let Us Sway Twin Oars<br>
 						 60s, Happy</p>
 					 </div>
@@ -395,7 +406,80 @@
 	});
 })();
 </script>
+<script>
+window.onload = function(){
+     var audio = document.getElementById('music1');
+         audio.pause();//打开页面时无音乐
+}
+function play() {
+    var audio = document.getElementById('music1');
+    if (audio.paused) {
+        audio.play();
+        document.getElementById('musicImg').src="img/Felica-radio.png";
+    }else{
+        audio.pause();
+        audio.currentTime = 0;//音乐从头播放
+        document.getElementById('musicImg').src="img/Felica-radio.png";
+    }
+}
+</script>
+<!--
+<script>
+window.onload = function(){
+     var audio = document.getElementById('music2');
+         audio.pause();//打开页面时无音乐
+}
+function play() {
+    var audio = document.getElementById('music2');
+    if (audio.paused) {
+        audio.play();
+        document.getElementById('musicImg').src="img/Antonia-radio.png";
+    }else{
+        audio.pause();
+        audio.currentTime = 0;//音乐从头播放
+        document.getElementById('musicImg').src="img/Antonia-radio.png";
+    }
+}
+</script>
 
+<script>
+window.onload = function(){
+     var audio = document.getElementById('music3');
+         audio.pause();//打开页面时无音乐
+}
+function play() {
+    var audio = document.getElementById('music3');
+    if (audio.paused) {
+        audio.play();
+        document.getElementById('musicImg').src="img/Zhu-radio.png";
+    }else{
+        audio.pause();
+        audio.currentTime = 0;//音乐从头播放
+        document.getElementById('musicImg').src="img/Zhu-radio.png";
+    }
+}
+</script> -->
+
+<!-- play music -->
+<script type="text/javascript">
+window.onload = function(){
+var arr = ["MUSICA/music1.mp3","MUSICA/music2.mp3","MUSICA/music3.mp3"];               //把需要播放的歌曲从后往前排，这里已添加两首音乐，可继续添加多个音乐
+var myAudio = new Audio();
+myAudio.preload = true;
+myAudio.controls = true;
+myAudio.src = arr.pop();         //每次读数组最后一个元素
+myAudio.addEventListener('ended', playEndedHandler, false);
+myAudio.play();
+document.getElementById("music1").appendChild(myAudio);
+myAudio.loop = false;//禁止循环，否则无法触发ended事件
+function playEndedHandler(){
+myAudio.src = arr.pop();
+myAudio.play();
+console.log(arr.length);
+!arr.length && myAudio.removeEventListener('ended',playEndedHandler,false);//只有一个元素时解除绑定
+}
+}
+</script>
 
 </body>
 </html>
